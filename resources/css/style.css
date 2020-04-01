@@ -5,7 +5,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /*Include padding and border in the element's total width and height*/
 }
 
 html {
@@ -183,6 +183,7 @@ header{
     background-size: cover;
     background-position: center;
     height: 100vh; /*100% of viewport*/
+    background-attachment: fixed; /*A background-image that will not scroll with the page (fixed)*/
 }
 
 .hero-text-box {
@@ -338,4 +339,45 @@ header{
 
 .city-features{
     margin-bottom: 5px;
+}
+
+/* ========================= */
+/* TESTIMONIALS */
+/* ========================= */
+
+.section-testimonials{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed; /*A background-image that will not scroll with the page (fixed)*/
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote::before{
+    content: "\201C";
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    left: -5px;
+    top:-5px;
+}
+
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img{
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
 }
