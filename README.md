@@ -1,2 +1,2 @@
 # FoodWebsite
- <img src="https://imgur.com/emt0wFB">
+[Imgur](https://imgur.com/emt0wFB)
